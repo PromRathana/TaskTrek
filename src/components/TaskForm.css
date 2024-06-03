@@ -24,10 +24,11 @@
   color: #686868;
 }
 
-.task_form_bottom_line {
+.task_form_botton_line {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .task_status {
