@@ -37,10 +37,6 @@ const TaskForm = ({ setTasks }) => {
     });
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log(taskData);
-  // };
   const handleSubmit = (e) => {
     e.preventDefault();
     setTasks((prev) => {

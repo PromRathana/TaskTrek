@@ -2,7 +2,6 @@ import Tag from "./Tag.jsx";
 import delete_icon from "../assets/delete.png";
 import "./TaskCard.css";
 import React, { useEffect } from "react";
-// import { useEffect } from "react";
 
 const TaskCard = ({ title, tags, handleDelete, index }) => {
   return (
@@ -11,7 +10,7 @@ const TaskCard = ({ title, tags, handleDelete, index }) => {
       <div className="task_card_bottom_line">
         <div className="task_card_tags">
           {tags.map((tag, index) => (
-            <Tag key={index} tagName={tag} selectd={true} /> // Assuming 'selected' is a boolean prop
+            <Tag key={index} tagName={tag} selectd={true} />
           ))}
         </div>
         <div className="task_delete" onClick={() => handleDelete(index)}>

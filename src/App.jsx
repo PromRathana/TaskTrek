@@ -10,8 +10,6 @@ import { useEffect } from "react";
 
 const oldTasks = localStorage.getItem("tasks");
 const App = () => {
-  // Show usages  onsidetos *
-
   const [tasks, setTasks] = useState(JSON.parse(oldTasks) || []);
 
   useEffect(() => {
@@ -23,8 +21,6 @@ const App = () => {
     setTasks(newTasks);
   };
 
-  // const App = () => {
-  //   const [tasks, setTasks] = useState([{}]); // new code
   return (
     <div className="app">
       <TaskForm setTasks={setTasks} />
